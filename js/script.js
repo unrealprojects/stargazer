@@ -64,7 +64,8 @@
 					      height:'1000px',
 					      opacity:0.6,
 					      boxShadow: "0px 0px 100px #fff"
-		},500,'easeInExpo');	
+		},500,'easeInExpo');
+        $('.fate').animate({opacity:0.4},500,'easeInExpo').animate({opacity:1},100,'easeInExpo');
 		//$('#kvadrat_'+count).animate({ boxShadow : "0px 0px 40px #fff" },100); 
 		$('#kvadrat_'+count).fadeOut(500);
 		
@@ -157,3 +158,18 @@
 		startTimer();
 	});
 });
+
+
+/*
+    Разного цвета звездочки.
+    По окончанию игры корабль улетает, а к началу прилетает
+
+    Перерисовать корабль
+    Полоска прозаначная на загрузку
+
+    Два таба
+        1 Отызывы
+        2 Полный рейтинг
+
+     Ограничтить количиство символов 10
+*/

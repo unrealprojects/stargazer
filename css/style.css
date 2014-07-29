@@ -34,7 +34,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	right:0px;
 	border:1px solid black;
 	background: url('../img/back/back_3.jpg');
-s 	cursor: url('../img/cursor.png'),pointer;
+ 	/*cursor: url('../img/cursor.png'),pointer;*/
 }
 
 a.pluso-more {
