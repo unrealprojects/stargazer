@@ -1,0 +1,288 @@
+body{
+	font-size:14px;
+	text-transform:uppercase;
+	font-family:arial;
+	letter-spacing:2px;
+}
+.kvadrat {
+	height:20px;
+	width:20px;
+	position: fixed;
+/*  	background:white;  */
+	border-radius:1000px;
+	box-shadow:0px 0px 10px white;
+	display:none;
+	z-index:99999;
+	
+	
+background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.97) 20%, rgba(255,255,255,0.85) 46%, rgba(255,255,255,0.03) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(20%,rgba(255,255,255,0.97)), color-stop(46%,rgba(255,255,255,0.85)), color-stop(100%,rgba(255,255,255,0.03))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.97) 20%,rgba(255,255,255,0.85) 46%,rgba(255,255,255,0.03) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.97) 20%,rgba(255,255,255,0.85) 46%,rgba(255,255,255,0.03) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.97) 20%,rgba(255,255,255,0.85) 46%,rgba(255,255,255,0.03) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.97) 20%,rgba(255,255,255,0.85) 46%,rgba(255,255,255,0.03) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#08ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+#pole {
+	position:fixed;
+	width:100%;
+	height:100%;
+	bottom:0px;
+	top:0px;
+	left:0px;
+	right:0px;
+	border:1px solid black;
+	background: url('../img/back/back_3.jpg');
+s 	cursor: url('../img/cursor.png'),pointer;
+}
+
+a.pluso-more {
+  display: none !important;
+}
+
+span.pluso-wrap a {
+	box-shadow: 0px 0px 10px white;
+	border-radius: 22px;
+	margin: 5px 0 0 13px !important;
+	opacity:0.9;
+}
+
+span.pluso-wrap a:hover {
+	box-shadow: 0px 0px 20px white;
+	opacity:1;
+}
+#schetchik {
+
+	
+}
+.menu{
+	position:fixed;
+	top:0px;
+	z-index:2;
+	color:white;
+}
+
+#start{
+	position:fixed;
+	left:20px;
+	top:20px;
+	color:white;
+	cursor:pointer;
+	padding:4px 30px;
+	border:1px solid white;
+	border-radius:10px;
+	box-shadow:0px 0px 10px white;
+	text-shadow:0px 0px 10px white;
+}
+
+
+
+#schetchik{
+	position:fixed;
+	left:20px;
+	bottom:20px;
+	height:80px;
+	width:80px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	padding: 0px;
+	border:1px solid white;
+	box-shadow:0px 0px 10px white;
+	text-shadow:0px 0px 10px white;
+	text-align: center;
+	font-size: 32px;
+	line-height: 80px;
+}
+#score{
+	position:fixed;
+	right:20px;
+	bottom:20px;
+	padding:4px 30px;
+	border:1px solid white;
+	border-radius:10px;
+	box-shadow:0px 0px 10px white;
+	text-shadow:0px 0px 10px white;
+}
+
+.button{
+	padding:4px 30px;
+	border:1px solid white;
+	border-radius:50px;
+	box-shadow:0px 0px 10px white;
+	text-shadow:0px 0px 5px white;
+	background:rgba(255,255,255,0.1);
+}
+.center_button{
+	display:none;
+}
+
+.center_button{
+	z-index:10;
+	position:fixed;
+	padding:30px 100px;
+	width:200px;
+	color:white;
+	font-size:50px;
+	border:3px solid white;
+	border-radius:40px;
+	text-align:center;
+	cursor: pointer;
+	letter-spacing:8px;
+}
+
+.gamestart_block{
+  	z-index:10;
+	position:fixed;
+	padding:30px 50px;
+	color:white;
+	border:3px solid white;
+	border-radius:40px;
+	background: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	font-size:14px;
+	letter-spacing:0px;
+	text-transform:none;
+}
+.gamestart_block p{
+  margin:0px;
+  width:300px;
+  line-height:24px;
+  text-align: center;
+  text-shadow: 0px 0px 12px white;
+}
+.score_table ul{
+  list-style: none;
+  padding: 0px;
+}
+.score_table {
+z-index: 9999;
+position: fixed;
+color: white;
+box-shadow: 0px 0px 50px white;
+text-shadow: 0px 0px 50px black;
+background: rgba(255,255,255,0.3);
+border: 1px solid white;
+border-radius: 40px;
+padding: 20px 40px;
+text-transform: none;
+display:none;
+background: rgba(0, 0, 0, 0.5);
+}
+.new_game {
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 0px 12px white;
+    letter-spacing: 6px;
+    cursor: pointer;
+    padding: 18px 0px;
+}
+
+.table_colon1,.table_colon2,.table_colon3 {
+width: 90px;
+display: inline-block;
+text-shadow: 0px 0px 10px white;
+}
+
+.table_colon1.data,.table_colon2.data,.table_colon3.data{
+  text-align:center;
+}
+.table_colon1.header,.table_colon2.header,.table_colon3.header{
+  text-align:center;
+  margin-bottom: 15px;
+}
+li{
+  text-align:center;
+}
+
+li .tri{
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.center_button:hover{
+	box-shadow:0px 0px 50px white;
+	text-shadow:0px 0px 50px black;
+	background:rgba(255,255,255,0.3);
+}
+
+.new_game:hover{
+    text-shadow:0px 0px 30px white;
+}
+
+.enter_name{
+  outline:none;
+  border:none;
+  text-align:center;
+  display:block;
+  background:rgba(255,255,255,0.1);
+  font-size:32px;
+  width:300px;
+  letter-spacing:8px;
+  margin-top:20px;
+  color:white;
+  text-shadow: 0px 0px 12px white;
+}
+
+
+#time{
+	position:fixed;
+	top:20px;
+	right:20px;
+	text-align: center;
+	line-height:24px;
+	padding:0px;
+	width:300px;
+	height:24px;
+	border:1px solid white;
+	border-radius:10px;
+	box-shadow:0px 0px 10px white;
+	text-shadow:0px 0px 10px white;
+	
+}
+#animtime {
+	background-color:white;
+	opacity:0.3;
+	width:1px;
+	height:24px;
+	display:block;
+	border-radius:10px;
+	text-aling:center;
+	line-height:24px;
+} 
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    white;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    white;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    white;
+}
+
+.stargazer {
+      position: fixed;
+      margin-left: 4px;
+}
+.stargazer_inner {
+      text-align: center;
+      margin-bottom: 10px;
+}
+
+.fate {
+      position: fixed;
+      margin-left: 4px;
+      bottom:0px;
+      right:0px;
+      z-index: 1;
+      background:url('../img/fate.png');
+      width: 300px;
+      height: 204px;
+}
